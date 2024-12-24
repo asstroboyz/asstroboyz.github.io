@@ -43,7 +43,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am a fullstack developemnt in Hospital Siti Khodijah Pekalongan</p>
+                    <p>I am a beginner in full stack development at the company</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -73,7 +73,7 @@
                                     <li>Sistem Pengelolaan (E-Perpustakaan)</li>
                                 </ul>
                             </li>
-                            <li><span>Achievements</span><br>Juara 1 Coding Asyik Telkom</li>
+                            <li><span>Achievements</span><br>Champions of Coding Asyik Telkom</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -90,22 +90,7 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const tabLinks = document.querySelectorAll('.tab-links');
-            const tabContents = document.querySelectorAll('.tab-contents');
 
-            tabLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                    tabLinks.forEach(link => link.classList.remove('active-link'));
-                    tabContents.forEach(content => content.classList.remove('active-tab'));
-
-                    this.classList.add('active-link');
-                    document.getElementById(this.textContent.toLowerCase()).classList.add('active-tab');
-                });
-            });
-        });
-    </script>
     <!-- ----------services---------- -->
     <div id="services">
         <div class="container">
@@ -187,11 +172,11 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">contact me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>1234567890</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>gandagunawan36@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+62 853 2921 ****</p>
                     <div class="social-icons">
                         <a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.instagram.com/_v.sycho/"><i class="fa-brands fa-square-instagram"></i></a>
                         <a href="https://www.facebook.com/?locale=id_ID"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                     <a href="image/my_cv.pdf" download="" class="btn btn2">Download Cv</a>
@@ -213,8 +198,21 @@
         </div>
     </div>
 
-
     <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const tabLinks = document.querySelectorAll('.tab-links');
+            const tabContents = document.querySelectorAll('.tab-contents');
+
+            tabLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    tabLinks.forEach(link => link.classList.remove('active-link'));
+                    tabContents.forEach(content => content.classList.remove('active-tab'));
+
+                    this.classList.add('active-link');
+                    document.getElementById(this.textContent.toLowerCase()).classList.add('active-tab');
+                });
+            });
+        });
         // Ambil semua elemen yang memiliki class "view-work"
         const workLinks = document.querySelectorAll('.view-work');
 
@@ -245,9 +243,6 @@
                 });
             });
         });
-    </script>
-
-    <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
         function opentab(tabname) {
@@ -261,6 +256,10 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
+    </script>
+
+    <script>
+       
     </script>
 
     <script>
